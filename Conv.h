@@ -1,0 +1,11 @@
+void Padding_Conv2D_0(float input_Pad_Conv[9216], float output_Pad_Conv[11502]);
+void Conv2D_0(float Input_Conv[11502],float Output_Conv[73728], float kernel[1024]);
+void BatchNorm2D_0(float Input_BatchNorm[73728], float Output_BatchNorm[73728], float gamma[8], float beta[8], float MovMean[8], float MovVar[8]);
+void DepthWise_Con(float Input_Conv[73728], float Output_Conv[8192], float kernel[288]);
+void BatchNorm2D_1(float Input_BatchNorm[8192], float Output_BatchNorm[8192], float gamma[16], float beta[16], float MovMean[16], float MovVar[16]);
+void Activation0(float Input_Activation[8192], float Output_Activation[8192]);
+void Padding_Conv2D_2(float input_Pad_Conv[2048], float output_Pad_Conv[2288]);
+void Separable_Depthwise(float Input_Conv[2288], float Output_Conv[2048], float kernel[256]);
+void Separable_Pointwise(float Input_Conv[2048], float Output_Conv[2048], float kernel[256]);
+void BatchNorm2D_2(float Input_BatchNorm[2048], float Output_BatchNorm[2048], float gamma[16], float beta[16], float MovMean[16], float MovVar[16]);
+void Activation1(float Input_Activation[2048], float Output_Activation[2048]);
